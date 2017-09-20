@@ -35,23 +35,19 @@ Product management should be done in CRUD fashion. Things to be done include:
 
 Product list view:
 
-|![](readme_images/product_list.png)|
-|---|
+![](readme_images/product_list.png)
 
 New product form:
 
-|![](readme_images/product_new.png)|
-|---|
+![](readme_images/product_new.png)
 
 Edit product form:
 
-|![](readme_images/product_edit.png)|
-|---|
+![](readme_images/product_edit.png)
 
 Product details view:
 
-|![](readme_images/product_details.png)|
-|---|
+![](readme_images/product_details.png)
 
 Initial product list should include:
 
@@ -93,13 +89,11 @@ Things to do include:
 
 Invoice list:
 
-|![](readme_images/invoice_list.png)|
-|---|
+![](readme_images/invoice_list.png)
 
 Invoice details:
 
-|![](readme_images/invoice_details.png)|
-|---|
+![](readme_images/invoice_details.png)
 
 # Current invoice screen
 
@@ -117,8 +111,7 @@ Things to do include:
 
 Current invoice screen:
 
-|![](readme_images/current_invoice.png)|
-|---|
+![](readme_images/current_invoice.png)
 
 # Summary and checkout
 
@@ -133,8 +126,7 @@ Things to do include:
 
 Checkout screen:
 
-|![](readme_images/checkout.png)|
-|---|
+![](readme_images/checkout.png)
 
 # Automatic testing
 
