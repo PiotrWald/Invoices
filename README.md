@@ -95,3 +95,13 @@ Clone this repository and create local repo. Ready application should be deliver
 Before you send a solution add missing tests and make sure all tests are passing.
 
 Working application should be deployed to Heroku and link to app should be included with your solution.
+
+___
+
+# Things to think about
+
+Here are few additional things to think about. These aren't additional tasks and they shouldn't be part of your solution.
+
+* How would you implement possibility to change products number in invoice summary by inputing product count.
+* Is invoice numbering thread safe in your implementation and why?
+* How would you change invoices numbering system so it uses all numbers and letters in english alphabet instead of YY/mm/number format.
