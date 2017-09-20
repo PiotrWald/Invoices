@@ -6,7 +6,7 @@ class InvoicesController < ApplicationController
   # GET /invoices
   # GET /invoices.json
   def index
-    # XXX
+    # TODO
   end
 
   # GET /invoices/1
@@ -17,6 +17,6 @@ class InvoicesController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_invoice
-    # XXX
+    # TODO
   end
 end

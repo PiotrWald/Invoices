@@ -6,18 +6,18 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    # XXX
+    # TODO
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    # XXX
+    # TODO
   end
 
   # GET /products/new
   def new
-    # XXX
+    # TODO
   end
 
   # GET /products/1/edit
@@ -26,26 +26,26 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    # XXX
+    # TODO
   end
 
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
-    # XXX
+    # TODO
   end
 
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
-    # XXX
+    # TODO
   end
 
   private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_product
-    # XXX
+    # TODO
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

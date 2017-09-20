@@ -6,12 +6,12 @@ class CheckoutsController < ApplicationController
   def new; end
 
   def create
-    # XXX
+    # TODO
   end
 
   private
 
   def set_invoice
-    # XXX
+    # TODO
   end
 end

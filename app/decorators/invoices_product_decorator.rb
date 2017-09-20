@@ -3,5 +3,5 @@
 class InvoicesProductDecorator < ApplicationDecorator
   delegate_all
 
-  # XXX
+  # TODO
 end

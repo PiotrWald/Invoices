@@ -2,10 +2,10 @@
 
 class InvoicesProductsController < ApplicationController
   def create
-    # XXX
+    # TODO
   end
 
   def update
-    # XXX
+    # TODO
   end
 end

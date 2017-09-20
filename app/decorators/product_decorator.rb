@@ -3,5 +3,5 @@
 class ProductDecorator < ApplicationDecorator
   delegate_all
 
-  # XXX
+  # TODO
 end
