@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+class CheckoutsController < ApplicationController
+  before_action :set_invoice, only: %i[new create]
+
+  def new; end
+
+  def create
+    # XXX
+  end
+
+  private
+
+  def set_invoice
+    # XXX
+  end
+end

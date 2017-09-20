@@ -1,0 +1,11 @@
+nav.navbar.navbar-light.bg-faded
+  ul.navbar-nav.mr-auto
+  ul.navbar-nav
+  = link_to 'Invoices', invoices_path, class: 'nav-link'
+  = link_to 'Products', products_path, class: 'nav-link'
+  - if session[:current_invoice_id]
+    = link_to invoice_path(session[:current_invoice_id]), class: 'nav-link' do
+      ' Current invoice:
+      = Invoice.find(session[:current_invoice_id]).decorate.total
+  - else
+    | No current invoice

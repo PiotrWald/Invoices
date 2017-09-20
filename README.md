@@ -1,6 +1,6 @@
 # Simple invoice system Rails app
 
-The task is to prepare simple bookshop invoicing system from scratch.
+The task is to prepare simple bookshop invoicing system. You can use provided template, places with missing code are marked with comments `# XXX`. You can also provide complete solution by creating project from scratch. 
 
 ___
 
