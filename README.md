@@ -84,10 +84,14 @@ ___
 # Suggestions
 
 * Don’t worry too much about front-end but if you want to make a good impression you can use something like Bootstrap.
-* Make sure README includes all required steps to run your app on Unix-like environment. We’ll do our best to run your app on our computers, but if you use something non-standard you should let us know about it.
-* You can use any relational database you like, remember to mention it in README.
+* Make sure README includes all required steps to run your app on Unix-like environment.
+* You can use any PostgreSQL or SQLite as database.
 * Project should be available as GitHub public repository. Please make multiple commits to show your workflow.
 
 # Submitting solution
 
-Clone this repository and create private project on Bitbucket. Before you send a solution add missing tests and make sure all tests are passing.
+Clone this repository and create local repo. Ready application should be delivered as zip file. Please DON'T public solution as a public repo.
+
+Before you send a solution add missing tests and make sure all tests are passing.
+
+Working application should be deployed to Heroku and link to app should be included with your solution.
