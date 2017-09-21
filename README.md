@@ -168,6 +168,7 @@ ___
 # Suggestions
 
 * Don't worry if you can't do everything and send us parts you were able to solve, don't spend too much time on this
+* If you're not familiar with CQRS you can provide your own solution. We are aware that there are multiple solutions to get this application working and we just wanted to show you how we usually work.
 * Don’t worry too much about front-end but if you want to make a good impression you can use something like Bootstrap.
 * Make sure README includes all required steps to run your app on Unix-like environment.
 * You can use any PostgreSQL or SQLite as database.
