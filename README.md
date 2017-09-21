@@ -28,7 +28,7 @@ Product management should be done in CRUD fashion. Things to be done include:
 ➤ Delete product (with 'Are you sure' prompt) feature. Remember that old invoices that include deleted products should be still showed correctly!
 ➤ Application root should be product list.
 ➤ Link to product list in navigation.
-➤ Link to add product to invoice on product list .
+➤ Link to add product to invoice on product list.
 ➤ Initial product list.
 ➤ Validations for product name and code uniqueness.
 ```
@@ -135,14 +135,14 @@ Project should include automatic unit tests for products CRUD, adding product to
 Example test can include:
 
 ```
-➤ Adding items when there is no invoice should create new invoice
-➤ Adding items when there current invoice is already closed should create new invoice
-➤ Adding items when there current invoice should only add items to invoice
-➤ Adding items when there already the same item in invoice should change item count
-➤ Substracting items should change count of item in invoice and destroy item if count equals zero
-➤ Closing invoice assigns number
-➤ Closing empty invoice is not possible
-➤ Creation of invalid product (duplicate name, empty code, nagative price) is impossible
+➤ Adding items when there is no invoice should create new invoice.
+➤ Adding items when there current invoice is already closed should create new invoice.
+➤ Adding items when there current invoice should only add items to invoice.
+➤ Adding items when there already the same item in invoice should change item count.
+➤ Substracting items should change count of item in invoice and destroy item if count equals zero.
+➤ Closing invoice assigns number.
+➤ Closing empty invoice is not possible.
+➤ Creation of invalid product (duplicate name, empty code, nagative price) is impossible.
 ```
 
 ___
