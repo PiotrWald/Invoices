@@ -145,6 +145,25 @@ Example test can include:
 ➤ Creation of invalid product (duplicate name, empty code, nagative price) is impossible.
 ```
 
+# Overcommit and RuboCop
+
+In our projects we often use **overcommit** to run Git hooks. Git hooks are commands defined to run before execution of git commands (such as `git commit`) and can be used to automatize some processes.
+
+Project template provides file `.overcommit.yml` which includes two hooks configured:
+
+* pre-commit hook running RuboCop
+* pre-push hook running RSpec (you can change this to minitest or other testing framework you use)
+
+Overcommit must be installed first by running `gem install overcommit`.
+
+To learn more about overcommit go to [https://github.com/brigade/overcommit](https://github.com/brigade/overcommit).
+
+**RuboCop** is static code analyzer (linter) that helps to provide code with highest quality possible. After overcommit installation it will be run before every `git commit`. It can also be run manually by simply typing `rubocop` in command line while in the project folder.
+
+RuboCop configuration is provided in `.rubocop.yml` file. Remember that you have to install rubocop first if you never used it before - to install it run `gem install rubocop`.
+
+To learn more about RuboCop please go to [https://github.com/bbatsov/rubocop](https://github.com/bbatsov/rubocop).
+
 ___
 
 # Additional points
@@ -179,7 +198,7 @@ Clone this repository and create local repo on your machine. Ready application s
 
 Before you send a solution add missing tests and make sure all tests are green.
 
-Working application should be deployed to Heroku and link to app should be included with your solution.
+Working application should be deployed to Heroku and link to app should be included with your solution. To learn more about application deployment to Heroku please go to [https://devcenter.heroku.com/articles/getting-started-with-rails5#heroku-gems](https://devcenter.heroku.com/articles/getting-started-with-rails5#heroku-gems). Remember to include Procfile - it's use on Heroku is optional, but highly recommended.
 
 ___
 
