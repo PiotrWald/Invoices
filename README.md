@@ -198,7 +198,7 @@ Clone this repository and create local repo on your machine. Ready application s
 
 Before you send a solution add missing tests and make sure all tests are green.
 
-Working application should be deployed to Heroku and link to app should be included with your solution. To learn more about application deployment to Heroku please go to [https://devcenter.heroku.com/articles/getting-started-with-rails5#heroku-gems](https://devcenter.heroku.com/articles/getting-started-with-rails5#heroku-gems). Remember to include Procfile - it's use on Heroku is optional, but highly recommended.
+Working application should be deployed to Heroku and link to app should be included with your solution. To learn more about application deployment to Heroku please go to [https://devcenter.heroku.com/articles/getting-started-with-rails5](https://devcenter.heroku.com/articles/getting-started-with-rails5). Remember to include Procfile - it's use on Heroku is optional, but highly recommended.
 
 ___
 
