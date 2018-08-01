@@ -1,0 +1,15 @@
+h1
+	strong New Product
+
+= form_for @product do |f|
+	div
+		= f.label :name
+		= f.text_field :name
+	div
+		= f.label :code
+		= f.text_field :code
+	div
+		= f.label :price
+		= f.number_field :price, step: '0.01'
+	div
+		= f.submit 'Create Product'

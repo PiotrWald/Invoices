@@ -5,9 +5,7 @@ class InvoicesController < ApplicationController
 
   # GET /invoices
   # GET /invoices.json
-  def index
-    # TODO
-  end
+  def index; end
 
   # GET /invoices/1
   # GET /invoices/1.json

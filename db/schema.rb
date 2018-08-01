@@ -10,33 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170920091840) do
-
-  create_table "invoices", force: :cascade do |t|
-    t.string "number"
-    t.integer "src_number"
-    t.boolean "closed"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "invoices_products", force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "invoice_id", null: false
-    t.integer "count", default: 1, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["invoice_id"], name: "index_invoices_products_on_invoice_id"
-    t.index ["product_id"], name: "index_invoices_products_on_product_id"
-  end
+ActiveRecord::Schema.define(version: 20180801184334) do
 
   create_table "products", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "code", null: false
-    t.decimal "price", precision: 8, scale: 2, null: false
+    t.string "name"
+    t.decimal "price", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "hidden", default: false, null: false
+    t.string "code"
   end
 
 end

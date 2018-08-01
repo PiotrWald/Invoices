@@ -21,7 +21,7 @@ In overall, system should consist of:
 Product management should be done in CRUD fashion. Things to be done include:
 
 ```
-➤ View list of all products in database.
+➤+ View list of all products in database.
 ➤ View details of choosen product.
 ➤ Add new product feature.
 ➤ Edit existing product feature.
