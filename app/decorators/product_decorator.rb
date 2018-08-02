@@ -3,5 +3,7 @@
 class ProductDecorator < ApplicationDecorator
   delegate_all
 
-  # TODO
+  def price
+    wrap_in_dolar(object.price)
+  end
 end

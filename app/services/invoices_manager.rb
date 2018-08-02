@@ -29,7 +29,7 @@ class InvoicesManager
     if invoice_product
       increase_product_count_by_one(invoice_product)
     else
-      invoice_product = InvoicesProduct.create(invoice_id: @invoice.id, product_id: product_id)
+      invoice_product = InvoicesProduct.create(invoice_id: @invoice.id, product_id: product.id)
       update_invoice_total
     end
     invoice_product

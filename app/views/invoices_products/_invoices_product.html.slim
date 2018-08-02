@@ -1,10 +1,10 @@
 - product = invoices_product.product
 tr scope="row"
 	td = product.name
-	td = product.price
+	td = product.decorate.price
 	td = invoices_product.copies
-	td = invoices_product.copies * product.price
-	- if @is_invoice
+	td = "$#{invoices_product.copies * product.price}"
+	- if @opened
 		td
 			= form_for invoices_product, method: :put do |f|
 				= hidden_field_tag 'change', 'increase'

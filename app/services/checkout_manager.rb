@@ -6,6 +6,7 @@ class CheckoutManager
   end
 
   def close_invoice
+    return false if @invoice.invoices_products.count.zero?
     Invoice.update(@invoice.id, number: generate_number, status: :closed)
   end
 
@@ -13,7 +14,7 @@ class CheckoutManager
 
   def generate_number
     date = Time.zone.today.strftime('%Y/%m/')
-    count = Invoice.where('number like ?', "%#{date}%").count()
+    count = Invoice.where('number like ?', "%#{date}%").count
 
     if count.zero?
       date + '1'

@@ -3,5 +3,7 @@
 class InvoiceDecorator < ApplicationDecorator
   delegate_all
 
-  # TODO
+  def total
+    wrap_in_dolar(object.total)
+  end
 end

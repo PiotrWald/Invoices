@@ -7,6 +7,7 @@ class CheckoutsController < ApplicationController
 
   def create
     CheckoutManager.new(@invoice).close_invoice
+    redirect_to products_path
   end
 
   private

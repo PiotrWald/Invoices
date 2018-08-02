@@ -15,6 +15,6 @@ class InvoicesController < ApplicationController
     @invoice = Invoice.find(params[:id])
     @invoices_products = @invoice.invoices_products
     @invoices_product = InvoicesProduct.new
-    @is_invoice = true
+    @opened = @invoice.opened?
   end
 end

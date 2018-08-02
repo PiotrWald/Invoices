@@ -1,6 +1,6 @@
 tr scope="row"
 	td = invoice.created_at
 	td = invoice.number
-	td = invoice.total
+	td = invoice.decorate.total
 	td = 'Closed' if invoice.closed?
 	td = link_to 'Show', invoice
