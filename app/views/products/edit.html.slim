@@ -1,5 +1,5 @@
 h1
-	strong New Product
+	strong Edit Product
 
 = form_for @product do |f|
 	div
@@ -12,5 +12,7 @@ h1
 		= f.label :price
 		= f.number_field :price, step: '0.01'
 	div
-		= f.submit 'Create Product'
+		= f.submit 'Update Product'
+= link_to 'Show', product_path(@product)
+||
 = link_to 'Back', products_path

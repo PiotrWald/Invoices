@@ -17,15 +17,13 @@ end
 
 p 'Created 5 cool products'
 
-codes = ['A', 'B', 'C', 'D', 'E']
-
-40.times do |n|
+20.times do |n|
 
 	product = Product.create(
 		name: "Product #{n}",
-		code: codes[rand(5)],
+		code: (70 + n).chr,
 		price: n * 10
 		)
 end
 
-p 'Created 40 products...'
+p 'Created 20 products...'

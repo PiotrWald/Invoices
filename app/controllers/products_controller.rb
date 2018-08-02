@@ -19,33 +19,31 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
 
     if @product.save
-      redirect_to @product,
-                  notice: "#{@product.name} has been added"
+      redirect_to @product
     else
       render :new
     end
   end
 
-  # PATCH/PUT /products/1
-  # PATCH/PUT /products/1.json
   def update
-    # TODO
+    if @product.update(product_params)
+      redirect_to @product
+    else
+      redirect_to edit_product_path(@product)
+    end
   end
 
-  # DELETE /products/1
-  # DELETE /products/1.json
   def destroy
-    # TODO
+    @product.destroy
+    redirect_to products_path
   end
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_product
     @product = Product.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def product_params
     params.require(:product).permit(:name, :code, :price)
   end
