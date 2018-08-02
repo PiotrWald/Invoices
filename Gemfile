@@ -5,7 +5,7 @@ end
 
 
 gem 'rails', '~> 5.1.2'
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -27,6 +27,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'factory_girl'
+  gem 'sqlite3'
 end
 
 group :development do
