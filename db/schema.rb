@@ -10,22 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180802083850) do
+ActiveRecord::Schema.define(version: 20180802111017) do
 
   create_table "invoices", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "number"
-    t.decimal "total", precision: 8, scale: 2
     t.integer "status"
+    t.decimal "total", precision: 8, scale: 2, default: "0.0"
   end
 
   create_table "invoices_products", force: :cascade do |t|
-    t.string "number"
-    t.integer "status"
-    t.decimal "total", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "invoice_id"
+    t.integer "product_id"
+    t.integer "copies", default: 1
+    t.index ["invoice_id"], name: "index_invoices_products_on_invoice_id"
+    t.index ["product_id"], name: "index_invoices_products_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|

@@ -1,6 +1,6 @@
 tr scope="row"
-	td = product.created_at
-	td = product.number
-	td = product.total
-	td = product.status
-	td = link_to 'Show', product
+	td = invoice.created_at
+	td = invoice.number
+	td = invoice.total
+	td = 'Closed' if invoice.closed?
+	td = link_to 'Show', invoice

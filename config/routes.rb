@@ -1,8 +1,9 @@
 # frozen_string_literal :true
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'products#index'
   resources :products
   resources :invoices
+  resources :invoices_products, only: [:create, :update]
+  resource :checkout, only: [:create, :new]
 end

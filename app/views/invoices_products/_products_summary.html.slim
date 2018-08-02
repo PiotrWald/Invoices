@@ -1,0 +1,16 @@
+table class="table"
+  thead
+    tr
+      th scope="col" Name
+      th scope="col" Unit price
+      th scope="col" Count
+      th scope="col" Sum
+  tbody
+    - @invoices_products.each do |invoices_product|
+      - cache(invoices_product) do
+         = render invoices_product
+    tr scope="row"
+      td
+      td
+      td Total:
+      td = @invoice.total

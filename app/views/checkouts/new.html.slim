@@ -1,0 +1,6 @@
+h1
+	strong Checkout
+= render 'invoices_products/products_summary'
+
+= form_for @invoice, method: :post, url: checkout_path do |f|
+	= f.submit 'Close invoice'

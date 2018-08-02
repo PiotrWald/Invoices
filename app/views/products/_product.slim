@@ -2,7 +2,12 @@ tr scope="row"
 	td = product.name
 	td = product.code
 	td = product.price
-	td = link_to 'Add to invoice', product
+	td
+		= form_for @invoices_product do |f|
+			= f.hidden_field :product_id, value: product.id
+			= hidden_field_tag 'creation_method', 'by_id'
+			= f.submit 'Add to invoice'
+
 	td = link_to 'Show', product
 	td = link_to 'Edit', edit_product_path(product)
 	td = link_to 'Destroy',

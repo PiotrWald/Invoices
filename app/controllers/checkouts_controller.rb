@@ -6,12 +6,13 @@ class CheckoutsController < ApplicationController
   def new; end
 
   def create
-    # TODO
+    CheckoutManager.new(@invoice).close_invoice
   end
 
   private
 
   def set_invoice
-    # TODO
+    @invoice = Invoice.find_by(status: :opened)
+    @invoices_products = @invoice.invoices_products
   end
 end

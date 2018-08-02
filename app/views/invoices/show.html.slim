@@ -1,9 +1,19 @@
-h1 = @product.name
-table.table
-	tbody
-		tr scope="row"
-			td Code:
-			td = @product.code
-		tr scope="row"
-			td Price:
-			td = @product.price
+= 'Invoice closed' if @invoice.closed?
+p
+	strong Number:
+	= " #{@invoice.number}"
+h1
+	strong Invoice summary
+
+= render 'invoices_products/products_summary'
+
+= form_for @invoices_product do |f|
+  = text_field_tag 'code'
+  = hidden_field_tag 'creation_method', 'by_code'
+  = f.submit 'Add product by code', class: 'btn-default'
+
+= link_to 'Back', invoices_path
+
+- if @invoice.opened?
+  ||
+  = link_to 'Checkout', new_checkout_path

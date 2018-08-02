@@ -13,5 +13,8 @@ class InvoicesController < ApplicationController
 
   def set_invoice
     @invoice = Invoice.find(params[:id])
+    @invoices_products = @invoice.invoices_products
+    @invoices_product = InvoicesProduct.new
+    @is_invoice = true
   end
 end
