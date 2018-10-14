@@ -4,5 +4,5 @@
 2. run `$rails db:migrate` to run migrations
 3. run `$rails db:seed` to load record from seeds to db
 
-# Heroku verion
+## Heroku verion
 https://quiet-harbor-31311.herokuapp.com/
